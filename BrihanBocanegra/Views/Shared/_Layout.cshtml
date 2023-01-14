@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="portfolio, personal, instructor, trainer, debeloper, influencer, microsof, cloud">
+    <!-- title -->
+    <title>Brihan Bocanegra | MCT | MIE | MLSA - @ViewData["Title"]</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800" rel="stylesheet">
+
+    <environment include="Development">
+        <!-- boorstrap CSS -->
+        <link rel="stylesheet" href="~/lib/bootstrap/bootstrap.min.css" />
+        <!-- owl carousel CSS -->
+        <link href="~/lib/owl.carousel/owl.carousel.min.css" rel="stylesheet" />
+        <link href="~/lib/owl.carousel/owl.theme.default.min.css" rel="stylesheet" />
+        <!-- magnific-popup CSS -->
+        <link href="~/lib/magnific.popup/magnific-popup.css" rel="stylesheet" />
+        <!-- animate.min CSS -->
+        <link href="~/lib/animate/animate.min.css" rel="stylesheet" />
+        <!-- Font icon core CSS -->
+        <link href="~/lib/font.awesome/font-awesome.min.css" rel="stylesheet" />
+        <!-- Core style Css -->
+        <link rel="stylesheet" href="~/css/style.css" />
+        <!--[if lt IE 9]-->
+        <script src="~/lib/html5shiv/html5shiv.min.js"></script>
+    </environment>
+
+    <environment exclude="Development">
+        <!-- boorstrap CSS -->
+        <link rel="stylesheet" href="~/lib/bootstrap/bootstrap.min.css" />
+        <!-- owl carousel CSS -->
+        <link href="~/lib/owl.carousel/owl.carousel.min.css" rel="stylesheet" />
+        <link href="~/lib/owl.carousel/owl.theme.default.min.css" rel="stylesheet" />
+        <!-- magnific-popup CSS -->
+        <link href="~/lib/magnific.popup/magnific-popup.css" rel="stylesheet" />
+        <!-- animate.min CSS -->
+        <link href="~/lib/animate/animate.min.css" rel="stylesheet" />
+        <!-- Font icon core CSS -->
+        <link href="~/lib/font.awesome/font-awesome.min.css" rel="stylesheet" />
+        <!-- Core style Css -->
+        <link rel="stylesheet" href="~/css/style.css" />
+        <!--[if lt IE 9]-->
+        <script src="~/lib/html5shiv/html5shiv.min.js"></script>
+    </environment>
+
+</head>
+<body>
+    <!-- ====== Preloader ======  -->
+    <div class="loading">
+        <div class="load-circle">
+        </div>
+    </div>
+    <!-- ======End Preloader ======  -->
+    <!-- ====== Navgition ======  -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-icon-collapse" aria-expanded="false">
+                    <span class="sr-only">Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- logo -->
+                <a class="logo" href="#">Brihan Bocanegra</a>
+            </div>
+
+            <!-- Collect the nav links, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="nav-icon-collapse">
+                <!-- links -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" data-scroll-nav="0" class="active">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" data-scroll-nav="1">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" data-scroll-nav="2">Services</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" data-scroll-nav="3">Works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" data-scroll-nav="6">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- ====== End Navgition ======  -->
+
+    @RenderBody()
+
+    <!--====== Footer ======-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Brihan Bocanegra (MCT) | All Rights Reserved</p>
+                </div>
+                <!-- Button trigger modal -->
+                <div class="col-md-6 text-right">
+                    <p><a data-toggle="modal" data-target="#version">v2.0</a></p>
+                </div>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="version" tabindex="-1" role="dialog" aria-labelledby="version" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h5 class="modal-title" id="version">Change History</h5>
+                                
+                            </div>
+                            <div class="modal-body">
+                                v2.0 >> 1/8/2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====== End Footer ======-->
+
+    <environment include="Development">
+        <!-- jQuery -->
+        <script src="~/lib/jquery/jquery-3.0.0.min.js"></script>
+        <script src="~/lib/jquery/jquery-migrate-3.0.0.min.js"></script>
+        <!-- bootstrap -->
+        <script src="~/lib/bootstrap/bootstrap.min.js"></script>
+        <!-- scrollIt -->
+        <script src="~/lib/ScrollIt/scrollIt.min.js"></script>
+        <!-- magnific-popup -->
+        <script src="~/lib/magnific.popup/jquery.magnific-popup.min.js"></script>
+        <!-- owl carousel -->
+        <script src="~/lib/owl.carousel/owl.carousel.min.js"></script>
+        <!-- stellar js -->
+        <script src="~/lib/stellar/jquery.stellar.min.js"></script>
+        <!-- animated.headline -->
+        <script src="~/lib/animate/animated.headline.js"></script>
+        <!-- jquery.waypoints.min js -->
+        <script src="~/lib/waypoints/jquery.waypoints.min.js"></script>
+        <!-- jquery.counterup.min js -->
+        <script src="~/lib/counterup/jquery.counterup.min.js"></script>
+        <!-- isotope.pkgd.min js -->
+        <script src="~/lib/isotope.pkgd/isotope.pkgd.min.js"></script>
+        <!-- particles.min js -->
+        <script src="~/lib/particles/particles.min.js"></script>
+        <!-- validator js -->
+        <!-- app js -->
+        <script src="~/js/app.js" asp-append-version="true"></script>
+        <!-- custom script -->
+        <script src="~/js/custom.js" asp-append-version="true"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116560826-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-116560826-1');
+        </script>
+    </environment>
+
+    <environment exclude="Development">
+        <!-- jQuery -->
+        <script src="~/lib/jquery/jquery-3.0.0.min.js"></script>
+        <script src="~/lib/jquery/jquery-migrate-3.0.0.min.js"></script>
+        <!-- bootstrap -->
+        <script src="~/lib/bootstrap/bootstrap.min.js"></script>
+        <!-- scrollIt -->
+        <script src="~/lib/ScrollIt/scrollIt.min.js"></script>
+        <!-- magnific-popup -->
+        <script src="~/lib/magnific.popup/jquery.magnific-popup.min.js"></script>
+        <!-- owl carousel -->
+        <script src="~/lib/owl.carousel/owl.carousel.min.js"></script>
+        <!-- stellar js -->
+        <script src="~/lib/stellar/jquery.stellar.min.js"></script>
+        <!-- animated.headline -->
+        <script src="~/lib/animate/animated.headline.js"></script>
+        <!-- jquery.waypoints.min js -->
+        <script src="~/lib/waypoints/jquery.waypoints.min.js"></script>
+        <!-- jquery.counterup.min js -->
+        <script src="~/lib/counterup/jquery.counterup.min.js"></script>
+        <!-- isotope.pkgd.min js -->
+        <script src="~/lib/isotope.pkgd/isotope.pkgd.min.js"></script>
+        <!-- particles.min js -->
+        <script src="~/lib/particles/particles.min.js"></script>
+        <!-- validator js -->
+        <!-- app js -->
+        <script src="~/js/app.js" asp-append-version="true"></script>
+        <!-- custom script -->
+        <script src="~/js/custom.js" asp-append-version="true"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116560826-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-116560826-1');
+        </script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

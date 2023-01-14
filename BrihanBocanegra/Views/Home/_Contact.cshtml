@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+
+@model ContactFormModel
+
+
+<!--====== Contact ======-->
+<section class="contact section-padding" data-scroll-index="6">
+    <div class="container">
+        <div class="row">
+
+            <!-- section heading -->
+            <div class="section-head">
+                <h3>Contact Us.</h3>
+            </div>
+            <div class="col-md-offset-1 col-md-10">
+                <!-- contact info -->
+                <div class="info text-center mb-50">
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a href="https://goo.gl/maps/M7TwjqtbiV5bjp6k6" target="_blank">
+                                <span class="icon"><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
+                                <h6>Address</h6>
+                                <p>Ps. Tumay - Barranco, Perú</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a href="mailto:me@brihanbocanegra.com" target="_blank">
+                                <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                <h6>Email</h6>
+                                <p>me@brihanbocanegra.com</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a href="tel:+51910692305" target="_blank">
+                                <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                <h6>Phone</h6>
+                                <p>+51 910 692 305</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- contact form -->
+                <form class='form' method='post' asp-action="SendMessage">
+
+                    <input type='hidden' name='form-name' value='contact-form' />
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input asp-for="Subject" type="text" placeholder="Subject *" required="required">
+                                    <span asp-validation-for="Subject" class="text-danger"></span>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input asp-for="Name" type="text" placeholder="Name *" required="required">
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input asp-for="Phone" type="number" placeholder="Phone *" required="required">
+                                    <span asp-validation-for="Phone" class="text-danger"></span>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <input asp-for="Email" type="email" placeholder="Email *" required="required">
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea asp-for="Message" placeholder="Message *" rows="4" required="required"></textarea>
+                                    <span asp-validation-for="Message" class="text-danger"></span>
+                                </div>
+                                <input type="submit" value="Submit" class="buton buton-bg">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</section>
+<!--====== End Contact ======-->
+
+
+
+
+

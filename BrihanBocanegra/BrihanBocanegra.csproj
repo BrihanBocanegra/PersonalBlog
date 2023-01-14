@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>BrihanBocanegra</AssemblyName>
+    <RootNamespace>BrihanBocanegra</RootNamespace>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <UserSecretsId>fad5c0ec-14b4-4b26-b4e2-533326bf3068</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/6d23f4f6-6e1c-4700-aadd-3cb5251b6b0f/resourceGroups/BLOG/providers/microsoft.insights/components/brihanbocanegra</ApplicationInsightsResourceId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.8.0" />
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.4.0" />
+    <PackageReference Include="MailKit" Version="3.4.3" />
+    <PackageReference Include="Microsoft.Azure.KeyVault" Version="3.0.5" />
+    <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.6.2" />
+    <PackageReference Include="MimeKit" Version="3.4.3" />
+  </ItemGroup>
+
+</Project>
